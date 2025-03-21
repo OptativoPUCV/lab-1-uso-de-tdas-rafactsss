@@ -54,3 +54,13 @@ exercises.c:49:18: error: 'num' undeclared (first use in this function)
 exercises.c:49:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 25e24cb
+Fri, Mar 21, 2025 10:28:37 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:48:12: error: expected expression before '=' token
+       num* = i;
+            ^
+Compilation failed
+5d4ab0b
