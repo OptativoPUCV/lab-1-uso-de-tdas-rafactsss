@@ -99,6 +99,15 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+   Stack *create_stack()
+   for(size_t i = 0; cadena[i] !='\n'; i++){
+
+
+
+
+      }
+
+   
    return 0;
 }
 

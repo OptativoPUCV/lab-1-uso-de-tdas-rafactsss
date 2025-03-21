@@ -70,3 +70,127 @@ Fri, Mar 21, 2025 10:29:17 AM:
  tests:  2|3
 total_score: 20/70
 e8bf23d
+Fri, Mar 21, 2025 11:28:17 AM: 
+ exercises.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'create_stack':
+exercises.c:103:4: error: expected declaration specifiers before 'for'
+    for(size_t i = 0; cadena[i] !='\n'; i++){
+    ^~~
+exercises.c:103:22: error: expected declaration specifiers before 'cadena'
+    for(size_t i = 0; cadena[i] !='\n'; i++){
+                      ^~~~~~
+exercises.c:103:40: error: expected declaration specifiers before 'i'
+    for(size_t i = 0; cadena[i] !='\n'; i++){
+                                        ^
+exercises.c:111:4: error: expected declaration specifiers before 'return'
+    return 0;
+    ^~~~~~
+exercises.c:112:1: error: expected declaration specifiers before '}' token
+ }
+ ^
+In file included from test.c:6:0:
+arraylist.c:6:1: error: empty declaration [-Werror]
+ struct List {
+ ^~~~~~
+arraylist.c:12:14: error: storage class specified for parameter 'List'
+ typedef List List;
+              ^~~~
+arraylist.c:14:1: error: expected declaration specifiers before 'List'
+ List* create_list() {
+ ^~~~
+arraylist.c:21:13: error: expected declaration specifiers or '...' before 'List'
+ void* first(List *L) {
+             ^~~~
+arraylist.c:29:12: error: expected declaration specifiers or '...' before 'List'
+ void* next(List *L) {
+            ^~~~
+arraylist.c:37:16: error: expected declaration specifiers or '...' before 'List'
+ void pushFront(List *L, void *dato) {
+                ^~~~
+arraylist.c:50:15: error: expected declaration specifiers or '...' before 'List'
+ void pushBack(List *L, void *dato) {
+               ^~~~
+arraylist.c:55:18: error: expected declaration specifiers or '...' before 'List'
+ void pushCurrent(List *L, void *dato) {
+                  ^~~~
+arraylist.c:68:16: error: expected declaration specifiers or '...' before 'List'
+ void* popFront(List *L) {
+                ^~~~
+arraylist.c:80:15: error: expected declaration specifiers or '...' before 'List'
+ void* popBack(List *L) {
+               ^~~~
+arraylist.c:89:18: error: expected declaration specifiers or '...' before 'List'
+ void* popCurrent(List *L) {
+                  ^~~~
+arraylist.c:102:14: error: expected declaration specifiers or '...' before 'List'
+ int get_size(List *L) {
+              ^~~~
+test.c:9:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ char * _strdup2(const char * str) {
+                                   ^
+test.c:16:1: error: parameter 'test_id' is initialized
+ int test_id = -1;
+ ^~~
+test.c:19:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int success(){
+              ^
+test.c:24:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void err_msg(char* msg){
+                        ^
+test.c:31:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void ok_msg(char* msg){
+                       ^
+test.c:37:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void info_msg(char* msg){
+                         ^
+test.c:42:75: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int test_suite(int(*test)(), char* msg, int max_score, int id, int req_id){
+                                                                           ^
+test.c:60:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int test_crea_lista(){
+                      ^
+test.c:84:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int test_suma_lista(){
+                      ^
+test.c:112:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int test_elimina_elemento(){
+                            ^
+test.c:158:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int test_copia_pila(){
+                      ^
+test.c:214:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int test_parentesis_balanceados(){
+                                  ^
+test.c:253:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int main( int argc, char *argv[] ) {
+                                    ^
+test.c:16:5: error: declaration for parameter 'test_id' but no such parameter
+ int test_id = -1;
+     ^~~~~~~
+test.c:15:6: error: declaration for parameter 'msg' but no such parameter
+ char msg[300];
+      ^~~
+In file included from test.c:6:0:
+arraylist.c:12:14: error: parameter 'List' has incomplete type
+ typedef List List;
+              ^~~~
+arraylist.c:12:14: error: declaration for parameter 'List' but no such parameter
+test.c:271:1: error: expected '{' at end of input
+ }
+ ^
+test.c:271:1: error: no return statement in function returning non-void [-Werror=return-type]
+test.c: In function 'parentesisBalanceados':
+test.c:271:1: error: expected declaration or statement at end of input
+test.c:271:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+In file included from test.c:5:0:
+At top level:
+exercises.c:102:11: error: 'create_stack' defined but not used [-Werror=unused-function]
+    Stack *create_stack()
+           ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3b32602
