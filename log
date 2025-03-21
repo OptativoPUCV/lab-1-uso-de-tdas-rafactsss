@@ -34,3 +34,23 @@ exercises.c:84:4: error: suggest parentheses around assignment used as truth val
 cc1.exe: all warnings being treated as errors
 Compilation failed
 32d1490
+Fri, Mar 21, 2025 10:26:20 AM: 
+ exercises.c | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:46:33: error: expected expression before ')' token
+    for(size_t i = 1; i <= 10; ++){
+                                 ^
+exercises.c:48:7: error: unknown type name 'num'
+       num* = i;
+       ^~~
+exercises.c:48:12: error: expected identifier or '(' before '=' token
+       num* = i;
+            ^
+exercises.c:49:18: error: 'num' undeclared (first use in this function)
+       pushBack(L,num);
+                  ^~~
+exercises.c:49:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+25e24cb
