@@ -14,3 +14,23 @@ Fri, Mar 21, 2025 10:16:42 AM:
  tests:  0|5
 total_score: 0/70
 a2afb8a
+Fri, Mar 21, 2025 10:19:14 AM: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:81:15: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+    while(dato = pop(P1) != NULL){
+               ^
+exercises.c:81:4: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+    while(dato = pop(P1) != NULL){
+    ^~~~~
+exercises.c:84:15: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+    while(dato = pop(pila_aux)!= NULL){
+               ^
+exercises.c:84:4: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+    while(dato = pop(pila_aux)!= NULL){
+    ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+32d1490
