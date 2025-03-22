@@ -109,14 +109,15 @@ int parentesisBalanceados(char *cadena) {
          }
 
          char *parentesis = (char*)top(pila);
-         if(*parentesis == '(')
-
-
-
-
-      }
-
-   
+         if((*parentesis == '(' && cadena[i] != ')') || (*parentesis == '[' && cadena[i] != ']') 
+         || (*parentesis == '{' && cadena[i] != '}')){
+            return 0;
+         }
+         pop(pila);
+   }
+   if(top(pila) == NULL){
+      return 1;
+   }        
    return 0;
 }
 
