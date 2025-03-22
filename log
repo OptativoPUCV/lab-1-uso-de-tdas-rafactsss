@@ -283,3 +283,18 @@ Sat, Mar 22, 2025  6:11:15 PM:
  tests:  8|1
 total_score: 50/70
 3074f95
+Sat, Mar 22, 2025  6:16:31 PM: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:62:22: error: implicit declaration of function 'head' [-Werror=implicit-function-declaration]
+    int *dato = (int*)head(L);
+                      ^~~~
+exercises.c: In function 'eliminaElementos':
+exercises.c:82:16: error: comparison between pointer and integer [-Werror]
+    while(*dato != NULL){
+                ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9247bb6
