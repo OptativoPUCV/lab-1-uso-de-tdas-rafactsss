@@ -298,3 +298,14 @@ exercises.c:82:16: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9247bb6
+Sat, Mar 22, 2025  6:17:08 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:62:22: error: implicit declaration of function 'head' [-Werror=implicit-function-declaration]
+    int *dato = (int*)head(L);
+                      ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3b37887
